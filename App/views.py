@@ -6,11 +6,12 @@ import uuid
 
 from django.shortcuts import render, redirect
 
-from App.models import User, Goods, Wheel
+from App.models import User, Wheel, Goods
 
 
 # 首页
 def index(request):
+    goods = Goods.objects.all()
     wheel = Wheel.objects.all()
 
     token = request.session.get('token')
@@ -23,7 +24,8 @@ def index(request):
 
     data = {
         'name':name,
-        'wheel':wheel
+        'wheel':wheel,
+        'goods': goods
 
     }
     return render(request,'index.html',context=data)

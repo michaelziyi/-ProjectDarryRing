@@ -444,7 +444,7 @@ $(function(){
 
 
 	//主页大图跳转链接
-	$('.dr_dring a').attr('href','goodlist.html');
+	// $('.dr_dring a').attr('href','goodlist.html');
 
 	//头部左侧logo点击回到主页
 	$('.header_cen_lf images').click(function(){

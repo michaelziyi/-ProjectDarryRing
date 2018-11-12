@@ -77,12 +77,12 @@ WSGI_APPLICATION = 'WZY35DR.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'splite',
-        # 'USER':'root',
-        # 'PORT':'3306',
-        # 'HOST':'127.0.0.1',
-        # 'PASSWORD':'wangziyi02'
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME':'pythondr',
+        'USER':'root',
+        'PORT':'3306',
+        'HOST':'127.0.0.1',
+        'PASSWORD':'wangziyi02'
     }
 }
 
